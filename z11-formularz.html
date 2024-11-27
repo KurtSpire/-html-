@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Formularz</title>
+</head>
+
+<body bgcolor=lightgreen>
+<h1 align=center>Formularz dla uczniów na temat zajęć pozalekcyjnych</h1>
+
+<form enctype="text/plain" action="mailto:steampampkin@gmail.com" subject="formularz_dane" method="Post">
+<table align=center width=75%>
+	<tbody>
+		<tr> <td>Podaj swoje imię <td>Podaj swoje nazwisko <td >Podaj swoją klasę </tr>
+		<tr> <td><input type="imie"> <td><input type="nazwisko"> <td><input type="klasa"></tr> 
+		<tr> <td><br> </tr>
+		
+		<tr> <td colspan=4>Czy bierzesz udział w zajęciach pozalekcyjnych?</tr>
+		<tr> <td><input type="radio" name="pyt2">Tak &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input type="radio" name="pyt2">Nie</tr> 
+		<tr> <td><br> </tr>
+		
+		<tr> <td colspan=4>Które zajęcia pozalekcyjne Cię interesują? (można zaznaczyć więcej niż jedną opcję)</tr>
+		<tr> <td><input type="checkbox" name="pyt3">Koło matematyczne <td><input type="checkbox" name="pyt3">Koło plastyczne <td><input type="checkbox" name="pyt3">Warsztaty teatralne</tr>
+		<tr> <td><input type="checkbox" name="pyt3">Klub sportowy <td><input type="checkbox" name="pyt3">Szkolny klub filmowy <td><input type="checkbox" name="pyt3">Zajęcia z robotyki</tr>
+		<tr> <td><input type="checkbox" name="pyt3">Inne: &nbsp &nbsp <input type="inne_pyt3" name="pyt3"></tr>
+		<tr> <td><br> </tr>
+		
+		<tr> <td colspan=4>Ile godzin tygodniowo chciałbyś/chciałabyś przeznaczyć na zajęcia pozalekcyjne?</tr>
+		<tr> <td><input type="radio" name="pyt4">1-2 godziny <td><input type="radio" name="pyt4">3-4 godziny <td><input type="radio" name="pyt4">4-6 godziny <td><input type="radio" name="pyt4">więcej niż 8 godzin</tr>
+		<tr> <td><br> </tr>
+		
+		<tr> <td colspan=4>Czy uważasz, że obecna oferta zajęć pozalekcyjnych jest wystarczająca?</tr>
+		<tr> <td><input type="radio" name="pyt5">Tak <td colspan=2><input type="radio" name="pyt5">Nie, chciałbym/chciałabym więcej zajęć z zakresu:&nbsp<input type="inne_pyt5" name="pyt5"></tr>
+		<tr> <td><br> </tr>
+		
+		<tr> <td colspan=2>Jak oceniasz zajęcia, w których bierzesz udział?<br>	
+				<select style="width:180px">Wybierz odpowiedź
+					<option value="bdb">Bardzo dobre</option>
+					<option value="db">Dobre</option>
+					<option value="prz">Przeciętne</option>
+					<option value="sl">Słabe</option></select>	
+			<td colspan=2>Czy masz jakieś dodatkowe uwagi lub sugestie dotyczące zajęć pozalekcyjnych?<br>
+		</tr>
+		<tr><td><td><td colspan=2><textarea cols=68 rows=5></textarea></tr>
+		<tr><td colspan=2><input style="width:180px; height:90px;" type="submit" value="Wyślij"><td colspan=2><input style="width:180px; height:90px;" type="reset" value="Zresetuj"></tr>
+	</tbody>
+</table>
+</form>
+
+</body>
+</html>
